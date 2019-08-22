@@ -18,4 +18,11 @@
   <build>
     <finalName>WebApp</finalName>
   </build>
+  <distributionManagement>
+       <repository>
+         <id>internal.repo</id>
+         <name>Internal repo</name>
+         <url>file:///C:/Users/hansa/Documents/</url>
+       </repository>
+   </distributionManagement>
 </project>
