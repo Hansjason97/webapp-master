@@ -23,53 +23,7 @@
 
 <body>
 
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Continuous Delivery</a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right" role="form">
-                <div class="form-group">
-                    <input type="text" placeholder="Email" class="form-control">
-                </div>
-                <div class="form-group">
-                    <input type="password" placeholder="Password" class="form-control">
-                </div>
-                <button type="submit" class="btn btn-success">Sign in</button>
-            </form>
-        </div><!--/.navbar-collapse -->
-    </div>
-</div>
-<!--Carousel boostrap code here -->
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="C:\Users\hansa\Pictures\Continuous-Integration-3-3.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="C:\Users\hansa\Pictures\devops.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="C:\Users\hansa\Pictures\what-is-continuous-integration" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-    
+  
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
     <div class="container">
