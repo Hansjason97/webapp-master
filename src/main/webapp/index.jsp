@@ -47,7 +47,29 @@
         </div><!--/.navbar-collapse -->
     </div>
 </div>
-
+<!--Carousel boostrap code here -->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="C:\Users\hansa\Pictures\Continuous-Integration-3-3.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="C:\Users\hansa\Pictures\devops.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="C:\Users\hansa\Pictures\what-is-continuous-integration" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
     <div class="container">
@@ -64,7 +86,7 @@
             <h2>Continuous Integration</h2>
             <p><strong>Continuous Integration (CI)</strong> is a development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early.
  </p>
-            <p><a class="btn btn-default" href="continuous Integration.jsp" role="button">View details &raquo;</a></p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
             <h2>Continuous Delivery</h2>
