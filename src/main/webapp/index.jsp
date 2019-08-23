@@ -64,7 +64,7 @@
             <h2>Continuous Integration</h2>
             <p><strong>Continuous Integration (CI)</strong> is a development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early.
  </p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <p><a class="btn btn-default" href="continuous Integration.jsp" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
             <h2>Continuous Delivery</h2>
