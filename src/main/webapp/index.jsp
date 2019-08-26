@@ -57,7 +57,7 @@
     <hr>
 
     <footer>
-        <p>&copy; Company 2014</p>
+        <p>&copy; ITGStore 2019</p>
     </footer>
 </div> <!-- /container -->
 
