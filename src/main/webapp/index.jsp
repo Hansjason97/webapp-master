@@ -27,7 +27,7 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">
-        <img alt="Brand" src="C:\Users\hansa\Documents\ITG2.svg">
+        ITGStore
       </a>
     </div>
   </div>
