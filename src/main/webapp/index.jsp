@@ -23,6 +23,15 @@
 
 <body>
 
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="C:\Users\hansa\Documents\ITG2.svg">
+      </a>
+    </div>
+  </div>
+</nav>
   
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
