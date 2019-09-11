@@ -5,14 +5,14 @@ pipeline {
         stage('Compile'){
             steps{
             withMaven(jdk: 'Java 1.8.0', maven: 'LocalMaven') {
-                    sh 'mvn clean compile'
+                    sh label: '', script: 'mvn clean compile'
                 }
             }
         }
         stage('Test'){
             steps{
                 withMaven(jdk: 'Java 1.8.0', maven: 'LocalMaven') {
-                    sh 'mvn test'
+                    sh label: '', script: 'mvn test'
                 }
             }
         }
