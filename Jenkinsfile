@@ -1,19 +1,20 @@
 pipeline {
     agent any
-
+    tools{
+        maven 'LocalMaven'
+    }
     stages{
         stage('Compile'){
             steps{
-            withMaven(jdk: 'Java 1.8.0', maven: 'LocalMaven') {
                     bat 'mvn clean compile'
-                }
+                
             }
         }
         stage('Test'){
             steps{
-                withMaven(jdk: 'Java 1.8.0', maven: 'LocalMaven') {
+                    echo 'Test are running here ...'
                     bat 'mvn test'
-                }
+                
             }
         }
         stage('Deploy'){
