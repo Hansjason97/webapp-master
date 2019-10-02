@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@page language="java"%>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -22,6 +23,9 @@
 </head>
 
 <body>
+    
+    
+    
 <!--Navigation bar here we go boys !!!-->
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -35,15 +39,17 @@
             <a class="navbar-brand" href="#">CI/CD</a>
         </div>
         <div class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right" role="form">
-                <div class="form-group">
-                    <input type="text" placeholder="Username" class="form-control">
-                </div>
-                <div class="form-group">
-                    <input type="password" placeholder="Password" class="form-control">
-                </div>
-                <button type="submit" class="btn btn-success">Sign in</button>
-            </form>
+                <% 
+       if (session.getAttribute("username")==null){ %>
+    <%@include file="/logindex.html"%>
+                
+            <% }else { %>
+          <form class="navbar-form navbar-right" action="Logout" method="get" role="form">
+            <p class="text-primary">Welcome ${username}</p>
+            <input type="submit" class="btn btn-success" value="logout">
+          </form>
+      <% }
+    %>
         </div><!--/.navbar-collapse -->
     </div>
 </div>
