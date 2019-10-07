@@ -18,7 +18,7 @@ pipeline {
         stage('Deploy'){
             steps{
                 sh 'mvn deploy'
-                deploy adapters: [tomcat8(credentialsId: 'd225bba5-dcc6-4f28-9a59-55dd5e9fa26b', path: '', url: 'http://127.0.0.1:8082/')], contextPath: '/continuousintegration', onFailure: false, war: '**/*.war'
+                deploy adapters: [tomcat8(credentialsId: '0c390131-7b29-4ce3-bac9-7d35e49949a6', path: '', url: 'http://127.0.0.1:8082')], contextPath: '/continuousintegration', war: '**/*.war'
         }
         }
     }
