@@ -10,6 +10,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import static junit.framework.Assert.assertEquals;
 import junit.framework.TestCase;
+import org.junit.Test;
 
 /**
  *
@@ -30,7 +31,8 @@ public class LoginFailure extends TestCase {
     protected void tearDown() throws Exception {
         super.tearDown();
     }
-  public void logintest1(){
+    @Test
+  public void test(){
         String loginuser = "admin";
         String loginpass = "123456";
         String output;
@@ -50,7 +52,7 @@ public class LoginFailure extends TestCase {
          
              output = "failed";
          }
-        assertEquals("success", output);
+        assertNotSame("success", output);
         conn.close();
         }catch(Exception e){
        

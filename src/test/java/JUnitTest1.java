@@ -4,13 +4,12 @@
  * and open the template in the editor.
  */
 
-import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import javax.servlet.http.HttpSession;
 import junit.framework.TestCase;
+import org.junit.Test;
 
 /**
  *
@@ -32,8 +31,8 @@ public class JUnitTest1 extends TestCase {
         super.tearDown();
     }
  
-   
-    public void logintest1(){
+    @Test
+    public void test(){
         String loginuser = "admin";
         String loginpass = "123";
         String output;
@@ -53,7 +52,7 @@ public class JUnitTest1 extends TestCase {
          
              output = "failed";
          }
-        assertEquals("success", output);
+        assertSame("success", output);
         conn.close();
         }catch(Exception e){
        
