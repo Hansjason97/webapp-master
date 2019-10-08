@@ -1,5 +1,4 @@
 #Getting tomcat8.0
-FROM tomcat:8.0
+FROM hansjason/tomcatfixed:latest
 
-RUN apt-get update \
-    && docker run -it --name tomcat -p 8082:8080 tomcat:8.0 /binbash
+RUN docker run -it --name tomcat -p 8082:8080 hansjason/tomcatfixed:latest 
