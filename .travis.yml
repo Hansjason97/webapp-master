@@ -1,9 +1,38 @@
-language : java
+language: minimal
+services: docker
 
-mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+env:
+  - DOCKER_COMPOSE_VERSION=1.14.0
 
-mvn test -B
 jdk : 
   - oraclejdk9
 
-mvn clean compile
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install -y expect jq
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+
+install:
+  # Install Docker Compose
+  - curl -L "https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)" -o "$HOME/bin/docker-compose"
+  - chmod +x "$HOME/bin/docker-compose"
+  - docker-compose --version
+  - 
+
+before_script:
+  # Build images
+  - docker-compose build
+script:
+  # Compose
+  - mvn test
+  - mvn clean compile
+  - docker-compose up -d elasticsearch
+  - sleep 30
+  - docker-compose up -d
+  - docker-compose ps
+  - docker-compose logs elasticsearch
+  - docker-compose logs kibana
+  - docker-compose logs logstash
+  - docker-compose down -v
+  - echo 'Le build est termine '
